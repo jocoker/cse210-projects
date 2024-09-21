@@ -22,11 +22,11 @@ class Program
 
             if (magicNumbers > guess)
             {
-                Console.WriteLine("Higher");
+                Console.WriteLine("The Magic Number is higher.");
             }
             else if (magicNumbers < guess)
             {
-                Console.WriteLine("Lower");
+                Console.WriteLine("The Magic Number is lower");
             }
             else
             {
