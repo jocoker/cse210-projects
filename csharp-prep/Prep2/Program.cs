@@ -5,11 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Ask what the grade is and assign to variable
         Console.Write("What is your grade percentage? ");
         string gradePercent = Console.ReadLine();
+        //Turn string into integer
         int grade = int.Parse(gradePercent);
 
-         //Identify letter grade
+         //Identify letter grade and assign to letter variable
         string letter = "";
        
         if (grade >= 90)
@@ -33,8 +35,7 @@ class Program
             letter = "F";
         }
 
-
-//the + or - added
+        //Add in the + or -
         if(grade >=97 || grade <60)
         {
             Console.WriteLine($"You get an {letter}.");
@@ -53,8 +54,7 @@ class Program
         }
         
 
-//Pass the class                
-
+        //Pass the class
         if (grade >= 70)
         {
             Console.WriteLine("Congratulations! You have passed the class!");
