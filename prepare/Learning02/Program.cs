@@ -19,9 +19,12 @@ class Program
         //Console.WriteLine(job2._company);
 
         Resume resume1 = new Resume();
+       
         resume1._name = "Allison Rose";
         resume1._jobs.Add(job1);
         resume1._jobs.Add(job2);
+
+        Console.WriteLine(resume1._jobs[0]._title);
 
         resume1.Display();
 
