@@ -1,14 +1,39 @@
-using System;
-
-class Program
+// Base class
+public class Animal
 {
-    static void Main(string[] args)
+    public virtual void Speak()
     {
-        Console.WriteLine("Hello Sandbox World!");
-        Console.WriteLine("This is in C#.");
+        Console.WriteLine("Animal speaks");
+    }
+}
 
-        Console.Write("What is your fav color? ");
-        string color = Console.ReadLine();
-        Console.WriteLine($"I like the color {color} too!");
+// Derived class
+public class Dog : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+// Another derived class
+public class Cat : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Cat meows");
+    }
+}
+
+// Usage
+public class Program
+{
+    public static void Main()
+    {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        myDog.Speak(); // Output: Dog barks
+        myCat.Speak(); // Output: Cat meows
     }
 }
